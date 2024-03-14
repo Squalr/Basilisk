@@ -8,6 +8,10 @@ This is NOT a plug-and-play plugin, and some manual setup is required. Knowledge
 1) You will need to set up your own metahuman identity. You should put this in `Basilisk Content/Capture/Actors`. See https://www.youtube.com/watch?v=qPhn28Jk3Mo for a setup tutorial.
 2) Afterwards, edit `Basilisk Content/Capture/MH_Performance_Importer` and set the metahuman identity to your new identity.
 
+### Retargeting Setup
+1) Set up `Basilisk Content/MocapImporter/BP_MocapImporter` with all of the necessary UE4, UE5, and metahuman retargeters and skeletons
+2) Edit the `ExampleMetahumanEntry` in the same BP to reference your target metahuman skeleton. In addition, set up the Respeecher name (based on the character in Respeecher), or set the ElevenLabs name (based on what you named it in your library). Be sure to go into C++ and make sure the correct retargeter is active, currently its defaulting to Respeecher.
+
 ### Conda Setup
 The python scripts in this library are expected to run under the PantomimeVoice conda environment. There is a yml file to set this up, so just follow standard Conda tutorials.
 
