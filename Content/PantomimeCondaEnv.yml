@@ -1,0 +1,12 @@
+name: ResonanceVoice
+
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  - pip=23.2.1
+  - python=3.11.7
+  - pip:
+
+  
