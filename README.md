@@ -23,3 +23,6 @@ Refer to the video for shortcut setup https://youtu.be/rPDjWxF4Qyg
 ### Phone Voice Commands Setup
 Refer to the video for voice command setup https://youtu.be/rPDjWxF4Qyg
 
+### Live Link / iPhone Importing Setup
+Refer to the video for OSC server setup https://youtu.be/rPDjWxF4Qyg
+Set up `Basilisk Content/Capture/Devices/CS_iPhoneCapture0` to point to your iPhone IP. I suggest making a bunch of these to cover the entire local IP range that your phone may be.
