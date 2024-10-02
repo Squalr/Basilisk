@@ -1,0 +1,51 @@
+{
+  "FileVersion": 3,
+  "Version": 1,
+  "VersionName": "1.0",
+  "FriendlyName": "Basilisk",
+  "Description": "Basilisk is for synchronizing simultaneous motion capture between Live Link and Rokoko",
+  "Category": "Motion Capture",
+  "CreatedBy": "Squalr, Inc.",
+  "CreatedByURL": "",
+  "DocsURL": "",
+  "MarketplaceURL": "",
+  "SupportURL": "",
+  "CanContainContent": true,
+  "IsBetaVersion": false,
+  "IsExperimentalVersion": false,
+  "Installed": true,
+  "Modules": [
+    {
+      "Name": "BasiliskEditor",
+      "Type": "Editor",
+      "LoadingPhase": "PostEngineInit"
+    }
+  ],
+  "Plugins": [
+    {
+      "Name": "EditorScriptingUtilities",
+      "Enabled": true,
+      "TargetAllowList": [
+        "Editor"
+      ]
+    },
+    {
+      "Name": "IKRig",
+      "Enabled": true,
+      "TargetAllowList": [
+        "Editor"
+      ]
+    },
+    {
+      "Name": "MetaHuman",
+      "Enabled": true
+    },
+    {
+      "Name": "OSC",
+      "Enabled": true,
+      "TargetAllowList": [
+        "Editor"
+      ]
+    }
+  ]
+}
