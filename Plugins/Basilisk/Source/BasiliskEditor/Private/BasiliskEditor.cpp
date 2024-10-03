@@ -1,10 +1,7 @@
 ﻿#include "BasiliskEditor.h"
 
-#include "SubtitleCreator/SubtitleContextMenuActions.h"
-
 void FBasiliskEditorModule::StartupModule()
 {
-	FSubtitleContextMenuActions::RegisterMenus();
 }
 
 void FBasiliskEditorModule::ShutdownModule()

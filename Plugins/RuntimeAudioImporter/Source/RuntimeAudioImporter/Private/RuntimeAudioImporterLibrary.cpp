@@ -359,19 +359,6 @@ bool URuntimeAudioImporterLibrary::TryToRetrieveSoundWaveData(USoundWave* SoundW
 
 void URuntimeAudioImporterLibrary::ConvertRegularToImportedSoundWave(USoundWave* SoundWave, TSubclassOf<UImportedSoundWave> ImportedSoundWaveClass, const FOnRegularToAudioImporterSoundWaveConvertResultNative& Result)
 {
-	// zcanann - disabled, this causes engine-level ensures when leaving the game thread. We only use this for
-	// editor-time subtitle gen, so this is entirely fine to lag the game thread.
-	/*
-	if (IsInGameThread())
-	{
-		AsyncTask(ENamedThreads::AnyBackgroundHiPriTask, [SoundWave, ImportedSoundWaveClass, Result]()
-		{
-			ConvertRegularToImportedSoundWave(SoundWave, ImportedSoundWaveClass, Result);
-		});
-		return;
-	}
-	*/
-
 	auto ExecuteResult = [Result](bool bSucceeded, UImportedSoundWave* ImportedSoundWave)
 	{
 		AsyncTask(ENamedThreads::GameThread, [Result, bSucceeded, ImportedSoundWave]() mutable

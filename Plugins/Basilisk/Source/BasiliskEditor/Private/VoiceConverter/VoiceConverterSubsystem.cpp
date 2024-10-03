@@ -50,11 +50,6 @@ FString UVoiceConverterSubsystem::GetFFmpegPath()
 	return FFmpegPath;
 }
 
-FString UVoiceConverterSubsystem::GetVoiceConversionPipelinePath()
-{
-	return VoiceConversionPipelinePath;
-}
-
 void UVoiceConverterSubsystem::RunFFmpegCommand(const FString& Command)
 {
 	// Check if the FFmpeg executable exists

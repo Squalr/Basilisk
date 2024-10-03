@@ -19,12 +19,9 @@ public:
 	//~End of UEditorSubsystem interface
 
 	FString GetFFmpegPath();
-	FString GetVoiceConversionPipelinePath();
 	void ConvertMovToWav(const FString& InputMovFilePath, const FString& OutputWavFilePath);
 
 private:
-	const FString VoiceConversionPipelinePath = FPaths::Combine(FPaths::ProjectPluginsDir(), TEXT("Basilisk/Content/Scripts/voice_conversion_pipeline.py"));
-	const FString SubtitleGenerationPipelinePath = FPaths::Combine(FPaths::ProjectPluginsDir(), TEXT("Basilisk/Content/Scripts/subtitle_generation_pipeline.py"));
 	FString FFmpegPath;
 	FString CachedDestinationAudioFile;
 	FString CachedAudioFileNameNoExtension;
